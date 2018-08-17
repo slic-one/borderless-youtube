@@ -1,0 +1,14 @@
+{
+  "name": "borderlessyoutubeplayer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "slic",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.6"
+  }
+}
