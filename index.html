@@ -3,35 +3,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="drag-area drag-area-left"></div>
-    <div class="drag-area drag-area-right"></div>
+    <div class="drag-area"></div>
     <div class="menu-toggle" id="menu-toggle"></div>
 
     <webview id="player" src="https://youtube.com/" style="display:inline-flex;width: 100%;height: 100%;padding: 0;margin: 0;overflow: auto;overflow-y: hidden;" nodeintegration></webview>
 
-    <script>
-        const webview = document.getElementById('player');
-        setTimeout(setCss, 4000);
-
-        // webview.addEventListener('DOMContentLoaded', function () {
-        //     webview.insertCSS('html,body{ background-color: #FF0000 !important;}');
-        //     // webview.insertCSS(
-        //     //     '#masthead-container.ytd-app{position:absolute;top:1000px;}'
-        //     //     + '#page-manager.ytd-app{margin-top:0;}'
-        //     //     + '#top{margin-top:0}'
-        //     //     + 'ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch-flexy, ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy{padding-top:0}'
-        //     // );
-        // })
-        // webview.addEventListener('DOMContentLoaded', function () {
-            var style = '#masthead-container.ytd-app{position:absolute;top:1000px;}'
-                    + '#page-manager.ytd-app{margin-top:0;}'
-                    + '#top{margin-top:0}'
-                    + 'ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch-flexy, ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy{padding-top:0}';
-
-            function setCss() {
-                console.log('boop');
-                webview.executeJavaScript('var sheet = document.createElement("style");sheet.innerHTML = "' + style + '";document.body.appendChild(sheet);');// {border: 2px solid black; background-color: blue;}"
-            }
-        // });
-    </script>
+    <script src="script.js"></script>
 </body>
